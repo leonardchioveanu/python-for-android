@@ -559,16 +559,16 @@ function run_distribute() {
 	cd "$DIST_PATH"
 
 	debug "Create initial layout"
-	try mkdir assets bin private res res/raw templates
+	try mkdir private #assets bin res res/raw templates
 
 	debug "Copy default files"
-	try cp -a $SRC_PATH/default.properties .
-	try cp -a $SRC_PATH/local.properties .
+	#try cp -a $SRC_PATH/default.properties .
+	#try cp -a $SRC_PATH/local.properties .
 	try cp -a $SRC_PATH/build.py .
 	try cp -a $SRC_PATH/buildlib .
-	try cp -a $SRC_PATH/src .
-	try cp -a $SRC_PATH/templates .
-	try cp -a $SRC_PATH/res .
+	#try cp -a $SRC_PATH/src .
+	#try cp -a $SRC_PATH/templates .
+	#try cp -a $SRC_PATH/res .
 	try cp -a $SRC_PATH/blacklist.txt .
 
 	debug "Copy python distribution"
